@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/jadwal.css"/>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+    <!-- Navigation bar with logo -->
+    <nav class="w-full max-w-4xl flex justify-between items-center py-4 border-b border-gray-300">
+        <div class="flex items-center space-x-8">
+            <!-- Logo Image -->
+            
+                <img src="images/masjo hes.jpg" alt="Logo" class="h-10 w-auto"/>
+            
+            <!-- Navigation links -->
+            <a class="text-lg font-bold text-gray-800" href="Home.html">HOME</a>
+            <a class="text-lg font-bold text-gray-800" href="foto.html">FOTO</a>
+            <a class="text-lg font-bold text-gray-800" href="Jadwal.html">JADWAL</a>
+            <a class="text-lg font-bold text-gray-800" href="Info.html">INFO</a>
+        </div>
+    </nav>
+
+    <!-- Main profile section -->
+    <div class="w-full max-w-4xl bg-white p-8 mt-8 border border-gray-300">
+        <div class="flex justify-between items-start">
+            <div>
+                <!-- Dropdown button and menu -->
+                <div class="relative">
+                    <button class="bg-blue-100 text-blue-700 px-4 py-2 rounded-md mb-4" onclick="toggleMenu()">
+                        MENU
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="absolute hidden bg-white border border-gray-300 mt-2 rounded-md shadow-lg" id="dropdownMenu">
+                        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#" onclick="showContent('jadwal')">Jadwal</a>
+                        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#" onclick="showContent('pembagian')">Pembagian</a>
+                        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#" onclick="showContent('piket')">Piket</a>
+                        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#" onclick="showContent('rps')">RPS</a>
+                    </div>
+                </div>
+                
+                <!-- Profile text -->
+                <h1 class="text-5xl font-bold text-gray-800">Bethany Jones</h1>
+                <p class="text-lg text-gray-600 mt-4">
+                    I'm a dedicated culture critic and blogger located in San Francisco, California.
+                </p>
+                <p class="text-lg text-gray-800 mt-4">@reallygreatsite</p>
+                
+                <!-- Social media icons -->
+                <div class="flex space-x-4 mt-4">
+                    <a class="text-gray-800 text-2xl" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="text-gray-800 text-2xl" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="text-gray-800 text-2xl" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-gray-800 text-2xl" href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <!-- Profile image -->
+            <img class="w-80 h-auto object-cover border border-gray-300" src="https://storage.googleapis.com/a1aa/image/Zto6wNvQMB4FB5FetsvP2c8f5IIVg0RndAx8fuju7KBqIkYnA.jpg" alt="A woman wearing a hat, holding an ice cream cone and a bouquet of flowers, smiling with her eyes closed" width="300" height="400"/>
+        </div>
+    </div>
+
+    <!-- Dropdown content sections -->
+    <div class="w-full max-w-4xl bg-white p-8 mt-8 border border-gray-300 content hidden" id="jadwal">
+        <h2 class="text-3xl font-bold text-gray-800">Jadwal</h2>
+        <p class="text-lg text-gray-600 mt-4">Konten Jadwal di sini.</p>
+    </div>
+    <div class="w-full max-w-4xl bg-white p-8 mt-8 border border-gray-300 content hidden" id="pembagian">
+        <h2 class="text-3xl font-bold text-gray-800">Pembagian</h2>
+        <p class="text-lg text-gray-600 mt-4">Konten Pembagian di sini.</p>
+    </div>
+    <div class="w-full max-w-4xl bg-white p-8 mt-8 border border-gray-300 content hidden" id="piket">
+        <h2 class="text-3xl font-bold text-gray-800">Piket</h2>
+        <p class="text-lg text-gray-600 mt-4">Konten Piket di sini.</p>
+    </div>
+    <div class="w-full max-w-4xl bg-white p-8 mt-8 border border-gray-300 content hidden" id="rps">
+        <h2 class="text-3xl font-bold text-gray-800">RPS</h2>
+        <p class="text-lg text-gray-600 mt-4">Konten RPS di sini.</p>
+    </div>
+    <script src="JS/jadwal.js"></script>
+</body>
+</html>

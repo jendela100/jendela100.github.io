@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Foto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/foto.css"/>
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header class="header">
+        <img src="images/masjo hes.jpg" alt="Logo" />
+        <nav>
+            <a href="Home.html">HOME</a>
+            <a href="foto.html">FOTO</a>
+            <a href="Jadwal.html">JADWAL</a>
+            <a href="Info.html">INFO</a>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="content">
+        <h1>GALERY</h1>
+        <p>I'm a dedicated culture critic and blogger located in San Francisco, California.</p>
+        <div class="gallery">
+            <img src="https://storage.googleapis.com/a1aa/image/o18XncdifB3AQyqpcOJsZwXK9uQAHtHfn6dXChX5fZL5ICYnA.jpg" alt="Logo of an organization with a red background and scales of justice" onclick="openModal(this.src)">
+            <img src="https://storage.googleapis.com/a1aa/image/TBtu5WIfC3Q3IqhzRvl9KiW6coO2UrZpkTPM1mxw0T5MiA2JA.jpg" alt="Person holding a baguette and smiling" onclick="openModal(this.src)">
+            <img src="https://storage.googleapis.com/a1aa/image/0v3gU2NG1GIeV64Lh0IuEu4hjbjyieC0kJofwmFszGjsICYnA.jpg" alt="Logo of an organization with a black background and scales of justice" onclick="openModal(this.src)">
+            <img src="https://storage.googleapis.com/a1aa/image/FRfOv4e6eJYtZpXei8VlXcDVEfaiBXuuBFPCC8Zv0n0CjIgdC.jpg" alt="Person posing with a hand on their head" onclick="openModal(this.src)">
+            <img src="https://storage.googleapis.com/a1aa/image/DeKhdOJEYpW7cKLkiBKgokUR4NheH1Vqvwkyhnf95O26ICYnA.jpg" alt="Person posing in a white outfit" onclick="openModal(this.src)">
+            <img src="https://storage.googleapis.com/a1aa/image/qySTNhu546JBO5VJi77BW9J2gFfSJLHI1jePOB30ug9bEBsTA.jpg" alt="Logo of an organization with a red and white background and a hand symbol" onclick="openModal(this.src)">
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="JS/foto.js"></script>
+</body>
+</html>
